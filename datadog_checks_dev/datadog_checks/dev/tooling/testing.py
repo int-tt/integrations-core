@@ -160,10 +160,10 @@ def construct_pytest_options(
         )
 
     if marker:
-        pytest_options += ' -m {}'.format(marker)
+        pytest_options += ' -m "{}"'.format(marker)
 
     if test_filter:
-        pytest_options += ' -k {}'.format(test_filter)
+        pytest_options += ' -k "{}"'.format(test_filter)
 
     if pytest_args:
         pytest_options += ' {}'.format(pytest_args)
