@@ -139,25 +139,19 @@ instances:
     #       - test:mongodb
     #   - metric_prefix: mongo.example2
     #     query:
-    #     find: <COLLECTION_NAME>
-    #     filter:
-    #         amount:
-    #         "$gt": 25
-    #     sort:
-    #         amount: -1
+    #         find: <COLLECTION_NAME>
+    #         filter:
+    #             qty:
+    #               "$gt": 30
+    #         sort:
+    #             qty: -1
     #     fields:
-    #       - field_name: my_id
-    #         name: my_id
-    #         type: tag
     #       - field_name: status
     #         name: status_tag
     #         type: tag
-    #       - field_name: amount
-    #         name: amount
-    #         type: count
-    #       - field_name: elements
-    #         name: el
-    #         type: count
+    #       - field_name: qty
+    #         name: qty
+    #         type: gauge
     #     tags:
     #       - tag1:val1
     #       - tag2:val2
